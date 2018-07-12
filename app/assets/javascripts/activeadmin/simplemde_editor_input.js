@@ -3,6 +3,6 @@ $(document).ready(function () {
     $('.simplemde-editor').each(function () {
         var options = {};
         options = $.extend({}, options, $(this).data('options'));
-        new SimpleMDE( $(this), options );
+        new SimpleMDE({ options: options, element: $(this)[0] });
     });
 });
